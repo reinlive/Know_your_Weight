@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h>KNOW YOUR WEIGHT BOTH IN POUNDS AND KILOGRAMS</h>
+<br>
+</head>
+<br>
+<body>
+<section>
+	<article>
+		<form name="calculate">
+		Enter weight in pounds:
+		<input type ="text" name ="ibs">
+		<br>
+
+		<input type="button" value="Process" onClick="process()">
+		<br>
+		Weight in kgs is:
+		<input type="text" name="kgs" readonly-"readonly">
+
+	</form>
+
+		<script type="text/javascript">
+
+			
+			function process()
+			{
+				var ibsVar = parseFloat(document.calculate.ibs.value);
+				var kgsVar = ibsVar/2.2;
+				document.calculate.kgs.value =Math.round(kgsVar);
+			}
+		</script>
+	</article>
+</section>
+
+<footer>
+	</footer>
+</body>
+</html>
